@@ -27,6 +27,7 @@ section[data-testid="stSidebar"] * { color: #e8f4f8 !important; }
 with st.sidebar:
     st.markdown("### 🔬 科研方法指南")
     st.markdown("---")
+    st.markdown("<small style='color:#6b8fa8'>General</small>", unsafe_allow_html=True)
     page = st.radio(
         "导航",
         options=[
@@ -35,6 +36,10 @@ with st.sidebar:
             "📊 统计方法",
             "✅ 评估框架",
             "🧪 练习中心",
+            "─────────────",
+            "📗 Chapter 1: Qualitative Research",
+            "📘 Chapter 2: Quantitative Research",
+            "📙 Chapter 3: Mixed Methods",
         ],
         label_visibility="collapsed"
     )
@@ -59,3 +64,10 @@ elif page == "✅ 评估框架":
 elif page == "🧪 练习中心":
     from pages.practice import show
     show()
+elif page == "📗 Chapter 1: Qualitative Research":
+    st.info("🚧 Coming soon...")
+elif page == "📘 Chapter 2: Quantitative Research":
+    from pages.quantitative import show
+    show()
+elif page == "📙 Chapter 3: Mixed Methods":
+    st.info("🚧 Coming soon...")
