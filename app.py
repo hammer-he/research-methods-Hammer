@@ -21,13 +21,11 @@ TEXTS = {
         "sidebar_interests_title": "研究方向",
         "sidebar_interests": [
             "运动表现分析",
-            "运动与行为健康",
-            "体育教育研究",
-            "系统综述与Meta分析",
+            "体育教育",
         ],
         # ── Home ──
-        "hero_name":     "马佳怡",
-        "hero_subtitle": "体育科学研究者 · 数据分析 · 体育教育",
+        "hero_name":     "何晨苗",
+        "hero_subtitle": "体育科学研究者 · 运动表现分析 · 体育教育",
         "hero_tagline":  (
             "专注于运动表现的量化分析与循证研究。"
             "研究方向横跨运动生物力学、健康行为干预与体育教育，"
@@ -205,13 +203,11 @@ Meta 分析通过统计方法合并多项研究结果，以下是最需要理解
         "sidebar_interests_title": "Research Interests",
         "sidebar_interests": [
             "Sports Performance Analysis",
-            "Exercise & Behavioral Health",
-            "Physical Education Research",
-            "Systematic Review & Meta-Analysis",
+            "Physical Education",
         ],
         # ── Home ──
-        "hero_name":     "Jiayi Ma",
-        "hero_subtitle": "Sport Science Researcher · Data Analysis · Physical Education",
+        "hero_name":     "He Chenmiao",
+        "hero_subtitle": "Sport Science Researcher · Sports Performance Analysis · Physical Education",
         "hero_tagline":  (
             "My work bridges quantitative research methods and applied sport science, "
             "with a focus on combat sports biomechanics, exercise-behavioral health intervention, "
@@ -388,43 +384,53 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
-[data-testid="stSidebar"] { background: #0f1923; }
-[data-testid="stSidebar"] * { color: #e8edf2 !important; }
+/* ── Sidebar: deep wine red ── */
+[data-testid="stSidebar"] { background: #1c0508; }
+[data-testid="stSidebar"] * { color: #f5e8ea !important; }
 [data-testid="stSidebar"] .stRadio label { font-size: 0.92rem; padding: 5px 0; }
+[data-testid="stSidebar"] hr { border-color: #4a1520 !important; }
 
 .main .block-container { padding-top: 2rem; max-width: 960px; }
 
-.hero { background: linear-gradient(135deg, #0f1923 0%, #1a2f45 60%, #0e3a5e 100%); border-radius: 16px; padding: 2.8rem 3rem; margin-bottom: 2rem; color: white; }
+/* ── Hero: PMS 202 red gradient ── */
+.hero { background: linear-gradient(135deg, #3d0d12 0%, #6a1e28 55%, #862633 100%); border-radius: 16px; padding: 2.8rem 3rem; margin-bottom: 2rem; color: white; }
 .hero h1 { font-family: 'Lora', serif; font-size: 2.4rem; font-weight: 600; margin: 0 0 0.4rem 0; color: white; }
-.hero .subtitle { font-size: 1.05rem; color: #93b8d8; margin-bottom: 1rem; }
-.hero .tagline { font-size: 0.9rem; color: #b8cfe0; line-height: 1.7; max-width: 620px; }
+.hero .subtitle { font-size: 1.05rem; color: #f0c0c6; margin-bottom: 1rem; }
+.hero .tagline { font-size: 0.9rem; color: #f5d8db; line-height: 1.7; max-width: 620px; }
 .hero .badges { margin-top: 1.4rem; display: flex; gap: 10px; flex-wrap: wrap; }
-.badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; color: #d4e8f8; }
+.badge { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; padding: 4px 14px; font-size: 0.82rem; color: #fde8ea; }
 
-.section-title { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 600; color: #0f1923; border-left: 4px solid #1a6fa8; padding-left: 14px; margin: 2rem 0 1.4rem 0; }
+/* ── Section title: red left border ── */
+.section-title { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 600; color: #1a0508; border-left: 4px solid #862633; padding-left: 14px; margin: 2rem 0 1.4rem 0; }
 
-.card { background: #fff; border: 1px solid #e4eaf0; border-radius: 12px; padding: 1.6rem 1.8rem; margin-bottom: 1.2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: box-shadow 0.2s; }
-.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.10); }
-.card-tag { display: inline-block; background: #e8f2fb; color: #1a6fa8; border-radius: 6px; font-size: 0.75rem; font-weight: 600; padding: 2px 10px; margin-bottom: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; }
+/* ── Cards ── */
+.card { background: #fff; border: 1px solid #e8d8da; border-radius: 12px; padding: 1.6rem 1.8rem; margin-bottom: 1.2rem; box-shadow: 0 2px 8px rgba(134,38,51,0.06); transition: box-shadow 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(134,38,51,0.13); }
+.card-tag { display: inline-block; background: #fdf0f1; color: #862633; border-radius: 6px; font-size: 0.75rem; font-weight: 600; padding: 2px 10px; margin-bottom: 0.7rem; text-transform: uppercase; letter-spacing: 0.04em; }
 .card-tag.green  { background: #e6f6ee; color: #1a7a4a; }
 .card-tag.orange { background: #fef3e2; color: #c47a15; }
 .card-tag.purple { background: #f0ecfb; color: #6b3fb5; }
-.card h3 { font-size: 1.1rem; font-weight: 600; color: #0f1923; margin: 0 0 0.5rem 0; }
+.card h3 { font-size: 1.1rem; font-weight: 600; color: #1a0508; margin: 0 0 0.5rem 0; }
 .card p  { font-size: 0.92rem; color: #4a5568; line-height: 1.65; margin: 0; }
 .card .meta { font-size: 0.82rem; color: #8a9ab0; margin-top: 0.7rem; }
 
+/* ── Stats ── */
 .stats-row { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
-.stat-box { flex: 1; min-width: 120px; background: #f7fafd; border: 1px solid #dde8f0; border-radius: 10px; padding: 1rem 1.2rem; text-align: center; }
-.stat-box .num   { font-size: 2rem; font-weight: 700; color: #1a6fa8; line-height: 1; }
+.stat-box { flex: 1; min-width: 120px; background: #fdf8f8; border: 1px solid #f0d5d7; border-radius: 10px; padding: 1rem 1.2rem; text-align: center; }
+.stat-box .num   { font-size: 2rem; font-weight: 700; color: #862633; line-height: 1; }
 .stat-box .label { font-size: 0.78rem; color: #6b7f94; margin-top: 4px; white-space: pre-line; }
 
-.knowledge-card { background: #fff; border: 1px solid #e4eaf0; border-radius: 12px; padding: 1.8rem; margin-bottom: 1.4rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-.knowledge-card h3 { font-family: 'Lora', serif; font-size: 1.2rem; color: #0f1923; margin: 0 0 0.8rem 0; }
+/* ── Knowledge cards ── */
+.knowledge-card { background: #fff; border: 1px solid #e8d8da; border-radius: 12px; padding: 1.8rem; margin-bottom: 1.4rem; box-shadow: 0 2px 8px rgba(134,38,51,0.05); }
+.knowledge-card h3 { font-family: 'Lora', serif; font-size: 1.2rem; color: #1a0508; margin: 0 0 0.8rem 0; }
 .knowledge-card .kbody { font-size: 0.92rem; color: #4a5568; line-height: 1.75; }
 .knowledge-card .kbody ul { margin: 0.6rem 0; padding-left: 1.4rem; }
 .knowledge-card .kbody li { margin-bottom: 0.4rem; }
-.divider { border: none; border-top: 1px solid #e8eef4; margin: 1.6rem 0; }
-.contact-chip { display: inline-flex; align-items: center; gap: 6px; background: #f0f6fb; border: 1px solid #c8dff0; border-radius: 8px; padding: 6px 14px; font-size: 0.88rem; color: #1a4f75; margin: 4px; text-decoration: none; }
+.divider { border: none; border-top: 1px solid #f0d8da; margin: 1.6rem 0; }
+
+/* ── Contact chips ── */
+.contact-chip { display: inline-flex; align-items: center; gap: 6px; background: #fdf5f6; border: 1px solid #e8c5c8; border-radius: 8px; padding: 6px 14px; font-size: 0.88rem; color: #6a1e27; margin: 4px; text-decoration: none; }
+.contact-chip:hover { background: #fde8ea; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -440,11 +446,11 @@ with st.sidebar:
 
     # ── Language toggle ──────────────────────────────────────
     lang_choice = st.radio(
-        "🌐 Language / 语言",
-        ["🇨🇳 中文", "🇬🇧 English"],
+        "语言 / Language",
+        ["中文", "English"],
         index=0 if st.session_state.lang == "zh" else 1
     )
-    st.session_state.lang = "zh" if "中文" in lang_choice else "en"
+    st.session_state.lang = "zh" if lang_choice == "中文" else "en"
     lang = st.session_state.lang
     T = TEXTS[lang]
 
@@ -509,10 +515,9 @@ if T["nav_home"] in page:
         <div class="num">{n}</div>
         <div class="label">{l}</div>
     </div>""" for n, l in [
-        ("2",  T["stat_conf_label"]),
-        ("1",  T["stat_meta_label"]),
-        ("1",  T["stat_review_label"]),
-        ("2+", T["stat_years_label"]),
+        ("2", T["stat_conf_label"]),
+        ("1", T["stat_meta_label"]),
+        ("1", T["stat_review_label"]),
     ])
     st.markdown(f'<div class="stats-row">{boxes_html}</div>', unsafe_allow_html=True)
 
@@ -580,9 +585,9 @@ elif T["nav_contact"] in page:
     <div class="card">
         <h3>{T["contact_card_title"]}</h3>
         <p style="margin-bottom:1rem;">{T["contact_card_body"]}</p>
-        <a class="contact-chip" href="mailto:your.email@university.edu">✉️ your.email@university.edu</a>
+        <a class="contact-chip" href="mailto:chenmiaohe7@gmail.com">✉️ chenmiaohe7@gmail.com</a>
+        <a class="contact-chip" href="mailto:602471974@qq.com">✉️ 602471974@qq.com</a>
         <a class="contact-chip" href="https://github.com/yourusername" target="_blank">🐙 GitHub</a>
-        <a class="contact-chip" href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
         <a class="contact-chip" href="#" target="_blank">🌐 {T["cv_link_label"]}</a>
     </div>
     """, unsafe_allow_html=True)
