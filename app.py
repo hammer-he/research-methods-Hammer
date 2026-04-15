@@ -234,8 +234,8 @@ with st.sidebar:
 if "Home" in page:
     st.markdown("""
     <div class="hero">
-        <h1>Jiayi Ma</h1>
-        <div class="subtitle">Sport Science Researcher · Data Analyst · Educator</div>
+        <h1>Chenmiao He</h1>
+        <div class="subtitle">Sport Science Researcher · Data Analyst · Physical Educator</div>
         <div class="tagline">
             Passionate about bridging quantitative research methods and sports performance.
             My work spans biomechanics, behavioral health, and physical education,
